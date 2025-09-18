@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mian Jabbar — Graphic Designer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfolio of Mian Jabbar — case studies, skills, and contact." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7c5cff;--glass:rgba(255,255,255,0.03);--maxw:1100px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',sans-serif;background:linear-gradient(180deg,#071029 0%,#0f1724 100%);color:#e6eef8;-webkit-font-smoothing:antialiased;}
+    .wrap{max-width:var(--maxw);margin:36px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:18px;align-items:center}
+    .logo img{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid var(--accent)}
+    h1{font-size:22px}
+    p.lead{color:var(--muted);font-size:14px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px}
+    .hero{display:grid;grid-template-columns:1fr;gap:24px;align-items:center;margin-bottom:34px}
+    .hero .intro{background:var(--glass);padding:28px;border-radius:14px}
+    .intro h2{font-size:28px;margin-bottom:6px}
+    .intro p{color:var(--muted);line-height:1.5}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600;margin-top:10px}
+    .skills{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+    .chip{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    #work .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:18px}
+    .project-card{background:var(--glass);border-radius:12px;overflow:hidden;transition:transform .2s}
+    .project-card:hover{transform:translateY(-4px)}
+    .thumb{width:100%;aspect-ratio:16/10;object-fit:cover}
+    .proj-info{padding:12px}
+    .proj-info h3{font-size:16px;margin-bottom:6px}
+    .proj-info p{color:var(--muted);font-size:13px}
+    .meta{margin-top:6px;display:flex;gap:8px;flex-wrap:wrap}
+    .tool{background:rgba(255,255,255,0.05);padding:4px 8px;border-radius:8px;font-size:12px;color:var(--muted)}
+    footer{margin-top:34px;display:flex;justify-content:space-between;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo"><img src="6a0cf364-7af7-42d6-91af-d1c462b1040b.png" alt="Mian Jabbar Logo"></div>
+        <div>
+          <h1>Mian Jabbar</h1>
+          <p class="lead">Graphic Designer • Brand Identity • Social Media</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="intro">
+        <h2>I create bold, clear designs that help brands grow.</h2>
+        <p>I’m Mian Jabbar, a passionate graphic designer focusing on logo design, social media posts, and brand identity. I enjoy transforming ideas into professional visuals that stand out online and offline.</p>
+        <a class="btn" href="#contact">Hire / Contact</a>
+        <div class="skills">
+          <span class="chip">Branding</span>
+          <span class="chip">Logo Design</span>
+          <span class="chip">Social Media</span>
+          <span class="chip">Canva & Photoshop</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2>Selected Work</h2>
+      <div class="grid">
+        <article class="project-card">
+          <img class="thumb" src="https://via.placeholder.com/900x600?text=Project+1" alt="Sample project">
+          <div class="proj-info">
+            <h3>Sample Project</h3>
+            <p>Replace this with a short description.</p>
+            <div class="meta"><span class="tool">Design</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:26px;background:var(--glass);padding:18px;border-radius:12px">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:mianjabbar2004@gmail.com" style="color:var(--accent)">mianjabbar2004@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/mian-jabbar258/" style="color:var(--accent)">Visit Profile</a></p>
+    </section>
+
+    <footer>
+      <div>© Mian Jabbar</div>
+    </footer>
+  </div>
+</body>
+</html>
