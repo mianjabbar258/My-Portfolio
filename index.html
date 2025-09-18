@@ -1,96 +1,172 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mian Jabbar — Graphic Designer Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <meta name="description" content="Portfolio of Mian Jabbar — case studies, skills, and contact." />
-  <style>
-    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7c5cff;--glass:rgba(255,255,255,0.03);--maxw:1100px}
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Inter',sans-serif;background:linear-gradient(180deg,#071029 0%,#0f1724 100%);color:#e6eef8;-webkit-font-smoothing:antialiased;}
-    .wrap{max-width:var(--maxw);margin:36px auto;padding:28px}
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
-    .brand{display:flex;gap:18px;align-items:center}
-    .logo img{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid var(--accent)}
-    h1{font-size:22px}
-    p.lead{color:var(--muted);font-size:14px}
-    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px}
-    .hero{display:grid;grid-template-columns:1fr;gap:24px;align-items:center;margin-bottom:34px}
-    .hero .intro{background:var(--glass);padding:28px;border-radius:14px}
-    .intro h2{font-size:28px;margin-bottom:6px}
-    .intro p{color:var(--muted);line-height:1.5}
-    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600;margin-top:10px}
-    .skills{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
-    .chip{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
-    #work .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:18px}
-    .project-card{background:var(--glass);border-radius:12px;overflow:hidden;transition:transform .2s}
-    .project-card:hover{transform:translateY(-4px)}
-    .thumb{width:100%;aspect-ratio:16/10;object-fit:cover}
-    .proj-info{padding:12px}
-    .proj-info h3{font-size:16px;margin-bottom:6px}
-    .proj-info p{color:var(--muted);font-size:13px}
-    .meta{margin-top:6px;display:flex;gap:8px;flex-wrap:wrap}
-    .tool{background:rgba(255,255,255,0.05);padding:4px 8px;border-radius:8px;font-size:12px;color:var(--muted)}
-    footer{margin-top:34px;display:flex;justify-content:space-between;color:var(--muted);font-size:14px}
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mian Jabbar — Graphic Designer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfolio of Mian Jabbar — case studies, skills, and contact." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7c5cff;--glass:rgba(255,255,255,0.03);--maxw:1100px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',sans-serif;background:linear-gradient(180deg,#071029 0%,#0f1724 100%);color:#e6eef8;-webkit-font-smoothing:antialiased;}
+    .wrap{max-width:var(--maxw);margin:36px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:18px;align-items:center}
+    .logo img{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid var(--accent)}
+    h1{font-size:22px}
+    p.lead{color:var(--muted);font-size:14px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px}
+    .hero{display:grid;grid-template-columns:1fr;gap:24px;align-items:center;margin-bottom:34px}
+    .hero .intro{background:var(--glass);padding:28px;border-radius:14px}
+    .intro h2{font-size:28px;margin-bottom:6px}
+    .intro p{color:var(--muted);line-height:1.5}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600;margin-top:10px}
+    .skills{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+    .chip{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    #work .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:18px}
+    .project-card{background:var(--glass);border-radius:12px;overflow:hidden;transition:transform .2s}
+    .project-card:hover{transform:translateY(-4px)}
+    .thumb{width:100%;aspect-ratio:16/10;object-fit:cover}
+    .proj-info{padding:12px}
+    .proj-info h3{font-size:16px;margin-bottom:6px}
+    .proj-info p{color:var(--muted);font-size:13px}
+    .meta{margin-top:6px;display:flex;gap:8px;flex-wrap:wrap}
+    .tool{background:rgba(255,255,255,0.05);padding:4px 8px;border-radius:8px;font-size:12px;color:var(--muted)}
+    footer{margin-top:34px;display:flex;justify-content:space-between;color:var(--muted);font-size:14px}
+  </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo"><img src="6a0cf364-7af7-42d6-91af-d1c462b1040b.png" alt="Mian Jabbar Logo"></div>
-        <div>
-          <h1>Mian Jabbar</h1>
-          <p class="lead">Graphic Designer • Brand Identity • Social Media</p>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo"><img src="Gemini_Generated_Image_oqi9bfoqi9bfoqi9.jpg" alt="Mian Jabbar Profile Picture"></div>
+        <div>
+          <h1>Mian Jabbar</h1>
+          <p class="lead">Graphic Designer • Brand Identity • Social Media</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="intro">
+        <h2>I create bold, clear designs that help brands grow.</h2>
+        <p>I’m Mian Jabbar, a passionate graphic designer focusing on logo design, social media posts, and brand identity. I enjoy transforming ideas into professional visuals that stand out online and offline.</p>
+        <a class="btn" href="#contact">Hire / Contact</a>
+        <div class="skills">
+          <span class="chip">Branding</span>
+          <span class="chip">Logo Design</span>
+          <span class="chip">Social Media</span>
+          <span class="chip">Canva & Photoshop</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2>Selected Work</h2>
+      <div class="grid">
+        <article class="project-card">
+          <img class="thumb" src="pbplumber.jpg" alt="Residential Plumber Solutions Flyer">
+          <div class="proj-info">
+            <h3>Residential Plumber Solutions</h3>
+            <p>Social media flyer and brand identity for a 3rd Generation Plumber service, including logo design and service highlights.</p>
+            <div class="meta"><span class="tool">Brand Identity</span><span class="tool">Social Media</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img class="thumb" src="MAJESTIC.png" alt="Majestic Store Logo Design">
+          <div class="proj-info">
+            <h3>Majestic Store Logo</h3>
+            <p>A modern, bold, and geometric logo design for an e-commerce brand, abstractly forming the letters 'M' and 'S'.</p>
+            <div class="meta"><span class="tool">Logo Design</span><span class="tool">Branding</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img class="thumb" src="ECO.jpg" alt="ECO SIP Branding">
+          <div class="proj-info">
+            <h3>ECO SIP Branding</h3>
+            <p>Visual identity and promotional graphic design for a pure drinking water product with a refreshing, natural theme.</p>
+            <div class="meta"><span class="tool">Branding</span><span class="tool">Social Media</span><span class="tool">Product Design</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img class="thumb" src="Black Wall Logo Design Mockup.jpg" alt="Al-Madina Foundation Logo Mockup">
+          <div class="proj-info">
+            <h3>Al-Madina Foundation Logo</h3>
+            <p>Logo design featuring a silhouette of Al-Masjid an-Nabawi with text in Urdu/Arabic for a charitable foundation.</p>
+            <div class="meta"><span class="tool">Logo Design</span><span class="tool">Cultural Design</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img class="thumb" src="Lamma Pind.png" alt="Lamma Pind Badminton Club Logo">
+          <div class="proj-info">
+            <h3>Lamma Pind Badminton Club</h3>
+            <p>A fun and dynamic logo design for a badminton club, integrating the letters 'LP' and a graphic representing a shuttlecock.</p>
+            <div class="meta"><span class="tool">Logo Design</span><span class="tool">Sports Branding</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+    
+    <section id="resume" style="margin-top:34px; background:var(--glass); padding:28px; border-radius:14px;">
+        <h2>Resume & Qualifications</h2>
+        
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:24px; margin-top:18px;">
+            <div class="education">
+                <h3>Education 🎓</h3>
+                <div style="margin-top:10px;">
+                    <p style="font-weight:600; font-size:16px;">Bachelor of Computer Science</p>
+                    <p class="lead">GGCSF | GPA: 3.54</p>
+                </div>
+                <div style="margin-top:10px;">
+                    <p style="font-weight:600; font-size:16px;">FSC (Pre-Medical)</p>
+                    <p class="lead">PUNJAB COLLEGE | Score: 831/1100</p>
+                </div>
+            </div>
+            
+            <div class="experience">
+                <h3>Experience 💼</h3>
+                <div style="margin-top:10px;">
+                    <p style="font-weight:600; font-size:16px;">Graphic Designer (2025)</p>
+                    <p class="lead">CANVA</p>
+                    <ul style="list-style-type:disc; margin-left:20px; color:var(--muted); font-size:14px; margin-top:4px;">
+                        <li>Created more than 100 graphic designs for YouTubers.</li>
+                        <li>Successfully completed a lot of complicated work.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="languages">
+                <h3 style="margin-top:0px;">Languages 🗣️</h3>
+                <div class="meta" style="margin-top:6px;">
+                    <span class="tool">English</span>
+                    <span class="tool">Urdu</span>
+                    <span class="tool">Punjabi</span>
+                </div>
+            </div>
         </div>
-      </div>
-      <nav>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <section class="hero">
-      <div class="intro">
-        <h2>I create bold, clear designs that help brands grow.</h2>
-        <p>I’m Mian Jabbar, a passionate graphic designer focusing on logo design, social media posts, and brand identity. I enjoy transforming ideas into professional visuals that stand out online and offline.</p>
-        <a class="btn" href="#contact">Hire / Contact</a>
-        <div class="skills">
-          <span class="chip">Branding</span>
-          <span class="chip">Logo Design</span>
-          <span class="chip">Social Media</span>
-          <span class="chip">Canva & Photoshop</span>
-        </div>
-      </div>
     </section>
 
-    <section id="work">
-      <h2>Selected Work</h2>
-      <div class="grid">
-        <article class="project-card">
-          <img class="thumb" src="https://via.placeholder.com/900x600?text=Project+1" alt="Sample project">
-          <div class="proj-info">
-            <h3>Sample Project</h3>
-            <p>Replace this with a short description.</p>
-            <div class="meta"><span class="tool">Design</span></div>
-          </div>
-        </article>
-      </div>
-    </section>
+    <section id="contact" style="margin-top:26px;background:var(--glass);padding:18px;border-radius:12px">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:mianjabbar2004@gmail.com" style="color:var(--accent)">mianjabbar2004@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/mian-jabbar258/" style="color:var(--accent)">Visit Profile</a></p>
+    </section>
 
-    <section id="contact" style="margin-top:26px;background:var(--glass);padding:18px;border-radius:12px">
-      <h3>Contact</h3>
-      <p>Email: <a href="mailto:mianjabbar2004@gmail.com" style="color:var(--accent)">mianjabbar2004@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/mian-jabbar258/" style="color:var(--accent)">Visit Profile</a></p>
-    </section>
-
-    <footer>
-      <div>© Mian Jabbar</div>
-    </footer>
-  </div>
+    <footer>
+      <div>© Mian Jabbar</div>
+    </footer>
+  </div>
 </body>
 </html>
